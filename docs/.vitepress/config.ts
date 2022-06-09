@@ -6,7 +6,7 @@ export default defineConfig({
   themeConfig: {
     logo: '/assets/e3d-logo.png',
     siteTitle: 'AutoCalcs Docs',
-    search: false,
+    search: true,
     searchMaxSuggestions: 10,
     
     nav: nav(),
@@ -63,6 +63,7 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/e3d' },
       { icon: 'twitter', link: 'https://twitter.com/engineered3D' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/donwen/' },
     ], // socialLinks
 
     footer: {
@@ -146,15 +147,6 @@ function sidebarGuide() {
 function sidebarDailyCalcs() {
   return [
     {
-      text: 'Driving',
-      collapsible: true,
-      items: [
-        { text: 'E-vehicle Energy Consumption', link: '/daily-calculations/e-vehicle-energy-consumption' },
-        { text: 'Gas Vehicle Energy Consumption', link: '/daily-calculations/gas-vehicle-energy-consumption' },
-        
-      ]
-    },
-    {
       text: 'Fun Calculations',
       collapsible: true,
       items: [
@@ -163,6 +155,16 @@ function sidebarDailyCalcs() {
         
       ]
     },
+    {
+      text: 'Driving',
+      collapsible: true,
+      items: [
+        { text: 'E-vehicle Energy Consumption', link: '/daily-calculations/e-vehicle-energy-consumption' },
+        { text: 'Gas Vehicle Energy Consumption', link: '/daily-calculations/gas-vehicle-energy-consumption' },
+        
+      ]
+    },
+    
   ]
 }
 
