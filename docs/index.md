@@ -11,7 +11,7 @@ hero:
       link: https://v2.donwen.com
     - theme: alt
       text: Learn AutoCalcs
-      link: /guide/what-is-autocalcs
+      link: /guide/
 
 features:
 - title: SEARCH

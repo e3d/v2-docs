@@ -1,11 +1,11 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'AutoCalcs Docs',
-  description: 'AutoCalcs Docs',
+  title: 'AutoCalcs',
+  description: 'Unit Conversion Unified Calculations',
   themeConfig: {
     logo: '/assets/e3d-logo.png',
-    siteTitle: 'AutoCalcs Docs',
+    siteTitle: 'AutoCalcs',
     search: true,
     searchMaxSuggestions: 10,
     
@@ -75,7 +75,7 @@ export default defineConfig({
 
 function nav() {
   return [
-    { text: 'Guide', link: '/guide/what-is-autocalcs.html', activeMatch: '/guide/' },
+    { text: 'Guide', link: '/guide/', activeMatch: '/guide/' },
 
     {
       text: 'Calculations',
@@ -111,7 +111,7 @@ function sidebarGuide() {
       text: 'Introduction',
       collapsible: true,
       items: [
-        { text: 'What is AutoCalcs', link: '/guide/what-is-autocalcs' },
+        { text: 'What is AutoCalcs', link: '/guide/' },
         { text: 'UUCC', link: '/guide/single-mode' },
         { text: 'Top-down Mode', link: '/guide/top-down-mode' },
         { text: 'Bottom-up Mode', link: '/guide/bottom-up-mode' },
