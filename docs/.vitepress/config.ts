@@ -12,7 +12,7 @@ export default defineConfig({
     nav: nav(),
 
     sidebar: { 
-      '/guide/': sidebarGuide(), 
+      // '/guide/': sidebarGuide(), 
       '/examples/': sidebarExamples(), 
       '/mechanical/': sidebarMechanical(),
       '/daily-calculations/': sidebarDailyCalcs(),
@@ -76,7 +76,6 @@ export default defineConfig({
 function nav() {
   return [
     { text: 'Guide', link: '/guide/what-is-autocalcs.html', activeMatch: '/guide/' },
-    // { text: 'Examples', link: '/examples/', activeMatch: '/examples/' },
 
     {
       text: 'Calculations',
@@ -101,6 +100,7 @@ function nav() {
         }
       ]
     },
+    { text: 'Help', link: 'https://v2.donwen.com/help' },
     { text: 'Contact', link: '/contact/' }
   ]
 }
@@ -112,9 +112,11 @@ function sidebarGuide() {
       collapsible: true,
       items: [
         { text: 'What is AutoCalcs', link: '/guide/what-is-autocalcs' },
-        { text: 'Single Mode', link: '/guide/getting-started' },
-        { text: 'Single Mode', link: '/guide/single-mode' },
-        { text: 'Multi-step Mode', link: '/guide/multi-step-mode' },
+        { text: 'UUCC', link: '/guide/single-mode' },
+        { text: 'Top-down Mode', link: '/guide/top-down-mode' },
+        { text: 'Bottom-up Mode', link: '/guide/bottom-up-mode' },
+        { text: 'Custom Units', link: '/guide/custom-units' },
+        { text: 'Down to the Essence', link: '/guide/down-to-the-essence' },
       ]
     },
     {
@@ -126,21 +128,21 @@ function sidebarGuide() {
       ]
     },
     {
-      text: 'Workflow',
-      collapsible: true,
-      items: []
-    },
-    {
-      text: 'Embedding UCUC Calculator in Your Website',
+      text: 'AutoCalcs as a Platform',
       collapsible: true,
       items: [
-        {
-          text: 'To Come',
-          link: '/guide/migration-from-vuepress'
-        },
-        
+        { text: 'Library of Calculation Content', link: '/guide/markdown' },
+        { text: 'Of the Community, By the Community', link: '/guide/asset-handling' },
       ]
-    }
+    },
+    {
+      text: 'Workflow',
+      collapsible: true,
+      items: [
+        { text: 'Embedding into A Webpage', link: '/guide/embedding' },
+      ]
+    },
+    
   ]
 }
 
@@ -152,7 +154,7 @@ function sidebarDailyCalcs() {
       items: [
         { text: 'Mass Adder', link: '/daily-calculations/mass-adder' },
         { text: 'Length Adder', link: '/daily-calculations/length-adder' },
-        
+        { text: 'Unit Conversion with Expression Input', link: '/daily-calculations/unit-conversion-w-expr-input' },
       ]
     },
     {
