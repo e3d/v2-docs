@@ -1,4 +1,4 @@
-# Mass/Weight Adder
+# Length Adder
 This calculator allows calculating total length of multiple length measurements that come in with different input units. It showcases the convenience of using UCUC.  
 
 If you want to add more lengths, just click the left-most button in the calculator header to add a new row of length.  

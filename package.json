@@ -1,15 +1,15 @@
 {
   "name": "autocalcs-docs",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
     "vitepress": "^1.0.0-alpha.1"
   },
   "scripts": {
-    "dd": "vitepress dev docs",
-    "db": "vitepress build docs",
-    "ds": "vitepress serve docs",
+    "d": "vitepress dev docs",
+    "b": "vitepress build docs",
+    "s": "vitepress serve docs",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"

@@ -16,6 +16,7 @@ export default defineConfig({
       '/examples/': sidebarExamples(), 
       '/mechanical/': sidebarMechanical(),
       '/daily-calculations/': sidebarDailyCalcs(),
+      '/physics/': sidebarPhysics(),
     },
 
 /* 
@@ -179,6 +180,7 @@ function sidebarMechanical() {
         { text: 'Torque To Power', link: '/mechanical/torque-to-power' },
         { text: 'Power To Torque', link: '/mechanical/power-to-torque' },
         { text: 'Belt/Chain Length', link: '/mechanical/belt-chain-length' },
+        { text: 'Valley Angle', link: '/mechanical/valley-angle' },
         
       ]
     },
@@ -190,6 +192,26 @@ function sidebarMechanical() {
         { text: 'Viscosity Unit Conversion', link: '/mechanical/viscosity-unit-conversion' },
       ]
     },    
+    {
+      text: 'More to Come...',
+      collapsible: true,
+      items: []
+    }
+  ]
+}
+
+
+function sidebarPhysics() {
+  return [
+    {
+      text: 'Physics',
+      collapsible: true,
+      items: [
+        { text: 'Pressure Calculator', link: '/physics/pressure-calculator' },
+        { text: 'Density to Mass Calculator', link: '/physics/density-to-mass' },
+        { text: 'Half Life Decay', link: '/physics/half-life-decay' },
+      ]
+    },
     {
       text: 'More to Come...',
       collapsible: true,
