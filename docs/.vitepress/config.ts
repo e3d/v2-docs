@@ -153,9 +153,9 @@ function sidebarDailyCalcs() {
       text: 'Fun Calculations',
       collapsible: true,
       items: [
+        { text: 'Unit Conversion with Expression Input', link: '/daily-calculations/unit-conversion-w-expr-input' },
         { text: 'Mass Adder', link: '/daily-calculations/mass-adder' },
         { text: 'Length Adder', link: '/daily-calculations/length-adder' },
-        { text: 'Unit Conversion with Expression Input', link: '/daily-calculations/unit-conversion-w-expr-input' },
       ]
     },
     {
@@ -210,6 +210,7 @@ function sidebarPhysics() {
         { text: 'Pressure Calculator', link: '/physics/pressure-calculator' },
         { text: 'Density to Mass Calculator', link: '/physics/density-to-mass' },
         { text: 'Half Life Decay', link: '/physics/half-life-decay' },
+        { text: 'Pendulum Calculation', link: '/physics/pendulum-calculation' },
       ]
     },
     {
