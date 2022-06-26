@@ -26,7 +26,7 @@ Below is a cylinder volume calculator that you can use right on this page. Pleas
   </iframe>
 
 ### - Images can be Added Easily
-Images can be added for each calculation easily in multiple ways; can be removed, or position adjusted easily.  
+Images can be added for each calculation easily in multiple ways; can be removed, or position adjusted easily - just "Drag & Drop".  
 
 When a calculation is created from an existing one, all images will be copied over.
 

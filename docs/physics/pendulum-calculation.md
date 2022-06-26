@@ -4,7 +4,7 @@ Details: Based on the relationship between the period of oscillation of a pendul
 ## Calculate Period of Oscillation for Given Length
 
 <iframe src="https://v2.donwen.com/embed/c-20210909.034321247-e3d-0c9454-582a1c"
-  width="100%" height="300" style="border:1px solid black;">
+  width="100%" height="800" style="border:1px solid black;">
 </iframe>
 
 ## Calculate Length for Given Period of Oscillation

@@ -12,9 +12,6 @@ hero:
     - theme: alt
       text: Learn AutoCalcs
       link: /guide/
-    - theme: alt
-      text: Help
-      link: https://v2.donwen.com/help
 
 features:
 - title: SEARCH

@@ -13,10 +13,13 @@ export default defineConfig({
 
     sidebar: { 
       // '/guide/': sidebarGuide(), 
+      '/math/': sidebarMath(),
+      '/physics/': sidebarPhysics(),
       '/examples/': sidebarExamples(), 
       '/mechanical/': sidebarMechanical(),
+      '/structural/': sidebarStructural(),
+      '/electrical/': sidebarElectrical(),
       '/daily-calculations/': sidebarDailyCalcs(),
-      '/physics/': sidebarPhysics(),
     },
 
 /* 
@@ -69,7 +72,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2021-present Don Wen'
+      copyright: 'Copyright © 2021-present Donwen Services.'
     },
   }
 })
@@ -101,7 +104,6 @@ function nav() {
         }
       ]
     },
-    { text: 'Help', link: 'https://v2.donwen.com/help' },
     { text: 'Contact', link: '/contact/' }
   ]
 }
@@ -147,6 +149,45 @@ function sidebarGuide() {
   ]
 }
 
+function sidebarMath() {
+  return [
+    {
+      text: 'Math',
+      collapsible: true,
+      items: [
+        { text: 'Volume Box', link: '/math/volume-box' },
+      ]
+    },
+    {
+      text: 'More to Come...',
+      collapsible: true,
+      items: []
+    }
+  ]
+}
+
+function sidebarPhysics() {
+  return [
+    {
+      text: 'Physics',
+      collapsible: true,
+      items: [
+        { text: 'Pressure Calculator', link: '/physics/pressure-calculator' },
+        { text: 'Density to Mass Calculator', link: '/physics/density-to-mass' },
+        { text: 'Mass - Box', link: '/physics/mass-box' },
+        { text: 'Mass - Sphere', link: '/physics/mass-sphere' },
+        { text: 'Half Life Decay', link: '/physics/half-life-decay' },
+        { text: 'Pendulum Calculation', link: '/physics/pendulum-calculation' },
+      ]
+    },
+    {
+      text: 'More to Come...',
+      collapsible: true,
+      items: []
+    }
+  ]
+}
+
 function sidebarDailyCalcs() {
   return [
     {
@@ -180,8 +221,9 @@ function sidebarMechanical() {
         { text: 'Torque To Power', link: '/mechanical/torque-to-power' },
         { text: 'Power To Torque', link: '/mechanical/power-to-torque' },
         { text: 'Belt/Chain Length', link: '/mechanical/belt-chain-length' },
+        { text: 'Shaft Sizing - Torsional, Round', link: '/mechanical/shaft-sizing-torsional-round' },
+        { text: 'Shaft Sizing - Torsional, Round(v1)', link: '/mechanical/shaft-sizing-torsional-round-v1' },
         { text: 'Valley Angle', link: '/mechanical/valley-angle' },
-        
       ]
     },
     {
@@ -201,16 +243,15 @@ function sidebarMechanical() {
 }
 
 
-function sidebarPhysics() {
+function sidebarStructural() {
   return [
     {
-      text: 'Physics',
+      text: 'Structural General',
       collapsible: true,
       items: [
-        { text: 'Pressure Calculator', link: '/physics/pressure-calculator' },
-        { text: 'Density to Mass Calculator', link: '/physics/density-to-mass' },
-        { text: 'Half Life Decay', link: '/physics/half-life-decay' },
-        { text: 'Pendulum Calculation', link: '/physics/pendulum-calculation' },
+        { text: 'Simple Beam, Uniform Load, Round',             link: '/structural/simple-beam-uniform-load-round' },
+        { text: 'Simple Beam, Uniform Load, Rectangular',       link: '/structural/simple-beam-uniform-load-rectangular' },
+        { text: 'Simple Beam, Concentrated Load, Rectangular',  link: '/structural/simple-beam-concentrated-load-rectangular' },
       ]
     },
     {
@@ -221,6 +262,23 @@ function sidebarPhysics() {
   ]
 }
 
+function sidebarElectrical() {
+  return [
+    {
+      text: 'Electrical General',
+      collapsible: true,
+      items: [
+        { text: 'Electrical Power', link: '/electrical/electrical-power' },
+        { text: "Ohm's Law",        link: '/electrical/ohm-law' },
+      ]
+    },
+    {
+      text: 'More to Come...',
+      collapsible: true,
+      items: []
+    }
+  ]
+}
 
 function sidebarExamples() {
   return [

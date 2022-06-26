@@ -1,3 +1,3 @@
-# Mechanical
+# Math Calculations
 
 Pick from the menu for Calculation list ...
