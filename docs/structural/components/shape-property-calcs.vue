@@ -8,6 +8,8 @@
   const shapePropertyData = [
     { id: 0, title: 'Round', calcUrl: 'c-20210906.173706515-e3d-0a34fa-5e9ba3' },
     { id: 1, title: 'Square', calcUrl: 'c-20210915.222913664-e3d-0c74d9-5de9c1' },
+    { id: 2, title: 'Rectangle', calcUrl: 'c-20210906.173706522-e3d-0ec46e-5adb6f' },
+
   ];
 
   const shapeSelected = ref(path + shapePropertyData[0].calcUrl);

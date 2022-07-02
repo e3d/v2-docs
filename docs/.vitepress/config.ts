@@ -248,6 +248,8 @@ function sidebarStructural() {
       text: 'Structural General',
       collapsible: true,
       items: [
+        { text: 'Simple Beam, Calcs',  link: '/structural/simple-beam-calcs' }, // Case 3
+
         { text: 'Simple Beam, Uniform Load, Round',             link: '/structural/simple-beam-uniform-load-round' }, // MH30th, P268, Case 1OK
         { text: 'Simple Beam, Uniform Load, Square',            link: '/structural/simple-beam-uniform-load-square' }, 
         { text: 'Simple Beam, Uniform Load, Rectangular',       link: '/structural/simple-beam-uniform-load-rectangular' },
@@ -257,8 +259,6 @@ function sidebarStructural() {
         { text: 'Simple Beam, Concentrated Load@Center, Rectangular',  link: '/structural/simple-beam-concentrated-center-load-rectangular' },
 
         { text: 'Simple Beam, Concentrated Load@Any Point, Round',  link: '/structural/simple-beam-concentrated-point-x-load-round' }, // Case 3
-
-        { text: 'Simple Beam, Calcs',  link: '/structural/simple-beam-calcs' }, // Case 3
 
       ]
     },

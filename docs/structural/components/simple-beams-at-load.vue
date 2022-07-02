@@ -25,7 +25,7 @@
   <!-- itemSelected: {{ itemSelected }} -->
   <div class="searchInput" style="display: inline-block;">
     <input class="searchInput" v-model="searchTerm" id="search" autocomplete="off"
-      placeholder="Enter Item Name ..." 
+      placeholder="Enter Load Case Name ..." 
       @click="showItemList = true"/>
   </div>
   
