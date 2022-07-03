@@ -1,53 +1,48 @@
 <script setup>
-  import { ref, computed } from 'vue';
+  import { ref, computed, defineProps } from 'vue';
+  defineProps({
+    calcsData: Array
+  })
+
+  const { calcsData } = toRefs(props);
 
   const searchTerm = ref('')
-  const showItemList = ref(false)
+  const showCalcList = ref(false)
 
-  const path = 'https://v2.donwen.com/embed/';
-  const shapePropertyData = [
-    { id: 0, title: 'Round', calcUrl: 'c-20210906.173706515-e3d-0a34fa-5e9ba3' },
-    { id: 1, title: 'Square', calcUrl: 'c-20210915.222913664-e3d-0c74d9-5de9c1' },
-    { id: 2, title: 'Rectangle', calcUrl: 'c-20210906.173706522-e3d-0ec46e-5adb6f' },
+  const path = 'https://v2.donwen.com/embed/';  
 
-  ];
+  const calcSelected = ref(calcsData.value[0]);
 
-  const shapeSelected = ref(path + shapePropertyData[0].calcUrl);
-
-  const filteredShapeData = computed(() => shapePropertyData.filter(
-    shape => shape.title.toLowerCase().includes(searchTerm.value.toLowerCase())
+  const filteredCalcsData = computed(() => calcsData.filter(
+    calc => calc.title.toLowerCase().includes(searchTerm.value.toLowerCase())
   ));
 
-  const changeShape = url => { shapeSelected.value = path + url; showItemList.value = false };
+  const changeCalc = calc => { calcSelected.value = calc; showCalcList.value = false };
 
 </script>
 
 <template>
-  <!-- Filtered: {{ filteredShapeData.length }} <br /> -->
-  <!-- shapeSelected: {{ shapeSelected }} -->
+  <!-- Filtered: {{ filteredCalcsData.length }} <br /> -->
+  <!-- calcSelected: {{ calcSelected }} -->
   <div class="searchInput" style="display: inline-block;">
     <input class="searchInput" v-model="searchTerm" id="search" autocomplete="off"
-      placeholder="Enter Shape Name ..." 
-      @click="showItemList = true"/>
-    <!-- <img class="search"
-      src="/assets/images/search-24px.svg"
-      alt="Search"
-      height="20" width="20" /> -->
+      placeholder="Enter Calc Name ..." 
+      @click="showCalcList = true"/>
   </div>
   
   <br>
 
-  <div id="searchedContent" class="searchedContent" v-if="showItemList === true">
-    <div v-for="shape in filteredShapeData" :key="shape.id" 
-      @click="changeShape(shape.calcUrl); showItemList = false"
-      @blur="showItemList = false">
-      {{ shape.title }}
+  <div id="searchedContent" class="searchedContent" v-if="showCalcList === true">
+    <div v-for="calc in filteredCalcsData" :key="calc.id" 
+      @click="changeCalc(calc); showCalcList = false"
+      @blur="showCalcList = false">
+      {{ calc.title }}
     </div>
   </div>
   
-  <div v-if="shapeSelected">
+  <div v-if="calcSelected">
     <iframe width="100%" height="800" style="border:1px solid black;"
-      :src="shapeSelected" >
+      :src="path + calcSelected.calcUrl" >
     </iframe>
   </div>
 </template>
