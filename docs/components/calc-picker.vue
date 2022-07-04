@@ -46,12 +46,15 @@
   </div>
   
   <div v-if="calcSelected">
-    <iframe width="100%" style="border:1px solid black;"
+    <iframe width="100%" style="border:1px solid black;" scrolling="auto"
       :height="iframeH"
       :src="path + calcSelected.calcUrl" >
     </iframe>
   </div>
 
+  <!-- future improvement on iframe to suit content length:
+    https://www.geeksforgeeks.org/resize-an-iframe-based-on-the-content/?ref=lbp 
+  -->
   <div style="text-align: right; ">
     Container Height: 
     <button @click="iframeH = Math.round(iframeH / 1.05)" style="text-align: center; background-color:powderblue; "> 
