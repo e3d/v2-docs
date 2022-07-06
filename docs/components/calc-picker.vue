@@ -57,12 +57,14 @@
   -->
   <div style="text-align: right; ">
     Container Height: 
-    <button @click="iframeH = Math.round(iframeH / 1.05)" style="text-align: center; background-color:powderblue; "> 
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button style="text-align: center; background-color:powderblue; "
+      @click="iframeH = Math.round(iframeH / 1.05)"> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </button>&nbsp;&nbsp;
     <!-- <input type="number" size="8" v-model="iframeH" style="text-align: center; background-color:lightgrey;"/> -->
-    <button @click="iframeH = Math.round(iframeH * 1.05)" style="text-align: center; background-color:powderblue;">
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button style="text-align: center; background-color:powderblue;"
+      @click="iframeH = Math.round(iframeH * 1.05)">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     </button>
   </div>
 </template>

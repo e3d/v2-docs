@@ -65,7 +65,7 @@ export default defineConfig({
  */
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/e3d' },
+      { icon: 'github', link: 'https://github.com/e3d/v2-docs' },
       { icon: 'twitter', link: 'https://twitter.com/engineered3D' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/donwen/' },
     ], // socialLinks
@@ -221,6 +221,8 @@ function sidebarMechanical() {
         { text: 'Torque To Power', link: '/mechanical/torque-to-power' },
         { text: 'Power To Torque', link: '/mechanical/power-to-torque' },
         { text: 'Belt/Chain Length', link: '/mechanical/belt-chain-length' },
+        { text: 'Bel Conveyor Speed', link: '/mechanical/belt-conveyor-speed' },
+        
         { text: 'Shaft Sizing - Torsional, Round', link: '/mechanical/shaft-sizing-torsional-round' },
         { text: 'Shaft Sizing - Torsional, Round(v1)', link: '/mechanical/shaft-sizing-torsional-round-v1' },
         { text: 'Valley Angle', link: '/mechanical/valley-angle' },
@@ -248,7 +250,7 @@ function sidebarStructural() {
       text: 'Structural General',
       collapsible: true,
       items: [
-        { text: 'Simple Beam, Calcs',  link: '/structural/simple-beam-calcs' }, // Case 3
+        { text: 'Simple Beam, Calcs - Unified',  link: '/structural/simple-beam-calcs-unified' }, // Case 3
 
         { text: 'Simple Beam, Uniform Load, Round',             link: '/structural/simple-beam-uniform-load-round' }, // MH30th, P268, Case 1OK
         { text: 'Simple Beam, Uniform Load, Square',            link: '/structural/simple-beam-uniform-load-square' }, 
