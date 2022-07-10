@@ -1,3 +1,12 @@
+<script setup>
+  import CalcEmbeder from '../components/calc-embeder.vue'
+
+  const calcData = {
+    title: 'Mass/Weight Adder', 
+    calcUrl: 'c-20220603.060922259-e3d-0974b8-52fb74' 
+  }
+</script>
+
 # Mass/Weight Adder
 This calculator allows calculating total mass of multiple objects that come in with different input units. It showcases the convenience of using UCUC.  
 
@@ -5,6 +14,6 @@ If you want to add more object masses, just click the left-most button in the ca
 
 Remember, the row number of each quantity can be drag-and-dropped to adjust the position of the row.
 
-<iframe src="https://v2.donwen.com/embed/c-20220603.060922259-e3d-0974b8-52fb74"
-  width="100%" height="450" style="border:1px solid black;">
-</iframe>
+<CalcEmbeder :calcData="calcData"
+  width="100%" :iframeHeight="750" style="border:1px solid black;">
+</CalcEmbeder>

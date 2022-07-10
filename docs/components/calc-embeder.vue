@@ -1,55 +1,22 @@
 <script setup>
   import { ref, toRefs, computed, defineProps } from 'vue';
   const props = defineProps({
-    calcsData: Array, // list of similar calcs, like shape-property-calcs, etc
+    calcData: Object, // a calc object
     iframeHeight: Number
   })
   
-  const { calcsData, iframeHeight } = toRefs(props);
+  const { calcData, iframeHeight } = toRefs(props);
   const iframeH = ref(iframeHeight.value)
-
-  const searchTerm = ref('')
-  const showCalcList = ref(false)
-
+  
   const path = 'https://v2.donwen.com/embed/';  
-
-  const calcSelected = ref(calcsData.value[0]);
-
-  const filteredCalcsData = computed(() => calcsData.value.filter(
-    calc => calc.title.toLowerCase().includes(searchTerm.value.toLowerCase())
-  ));
-
-  const changeCalc = calc => { 
-    calcSelected.value = calc; 
-    showCalcList.value = false;
-    searchTerm.value = ''
-  };
 
 </script>
 
 <template>
-  <!-- Filtered: {{ filteredCalcsData.length }} <br /> -->
-  <div style="text-align: center; font-size: large;"> <b><u>{{ calcSelected.title }}</u></b> </div>
-    
-  <div style="display: inline-block;">
-    <input class="searchInput" v-model="searchTerm" id="search" autocomplete="off"
-      placeholder="Search Calc Name ..." 
-      @click="showCalcList = true"/>    
-  </div> 
-
-  <div id="searchedContent" class="calc-list" v-if="showCalcList === true" >
-    <div class="calc-at-mouse"
-      v-for="calc in filteredCalcsData" :key="calc.id" 
-      @click="changeCalc(calc); showCalcList = false"
-      @blur="showCalcList = false">
-      {{ calc.title }}
-    </div>
-  </div>
-  
-  <div v-if="calcSelected">
+  <div>
     <iframe width="100%" style="border:1px solid black;" scrolling="auto"
       :height="iframeH"
-      :src="path + calcSelected.calcUrl" >
+      :src="path + calcData.calcUrl" >
     </iframe>
   </div>
 

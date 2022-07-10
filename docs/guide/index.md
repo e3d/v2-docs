@@ -1,3 +1,6 @@
+<script setup>
+  import CalcEmbeder from '../components/calc-embeder.vue'
+</script>
 ## What is AutoCalcs?
 
 As indicated by the name AutoCalcs, it includes two parts:
@@ -21,9 +24,9 @@ You can easily add a 2nd quantity (row) by clicking the 'Add A Quantity/Expressi
 Below is a cylinder volume calculator that you can use right on this page. Please note:
 - The volume is shown in two different units in case users want to see both simutaneously;
 - Both imperial and metric units are used in the calculator, while the basic volume calculation formula is used. This shows the convenience for the calculator that there is no need to worry about unit conversion at all when unit conversion is done automatically.
-  <iframe src="https://v2.donwen.com/embed/c-20220611.175626449-e3d-037420-51bb56"
-    width="100%" height="1200" style="border:1px solid black;">
-  </iframe>
+  <CalcEmbeder :calcData="{ calcUrl: 'c-20220611.175626449-e3d-037420-51bb56' }"
+    width="100%" :iframeHeight="1200" style="border:1px solid black;">
+  </CalcEmbeder>
 
 ### - Images can be Added Easily
 Images can be added for each calculation easily in multiple ways; can be removed, or position adjusted easily - just "Drag & Drop".  
@@ -46,9 +49,9 @@ For example, the follow HTML code will embed a simple unit converter on a webpag
 </iframe>
 ```
 It will show as the following on your webpage:
-<iframe src="https://v2.donwen.com/embed/c-20220311.035340069-e3d-00f43d-590820"
-  width="100%" height="300" style="border:1px solid black;">
-</iframe>
+<CalcEmbeder :calcData="{ calcUrl: 'c-20220311.035340069-e3d-00f43d-590820' }"
+  width="100%" :iframeHeight="300" style="border:1px solid black;">
+</CalcEmbeder>
 
 To have some fun, you can click on the *'Add A Quantity/Expression'* button (the left most on the calculator header) to add a new row to show Q1 with an additional unit, say 'm', and see what you get.
 
