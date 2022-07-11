@@ -173,7 +173,8 @@ function sidebarPhysics() {
       collapsible: true,
       items: [
         { text: 'Pressure Calculator', link: '/physics/pressure-calculator' },
-        { text: 'Density to Mass Calculator', link: '/physics/density-to-mass' },
+        { text: 'Volume to Mass Calculator', link: '/physics/volume-to-mass' },
+        { text: 'Volume to Mass Unified Calculator', link: '/physics/volume-to-mass-calcs-unified' },
         { text: 'Mass - Box', link: '/physics/mass-box' },
         { text: 'Mass - Sphere', link: '/physics/mass-sphere' },
         { text: 'Half Life Decay', link: '/physics/half-life-decay' },
