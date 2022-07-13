@@ -206,6 +206,7 @@ function sidebarDailyCalcs() {
       items: [
         { text: 'E-vehicle Energy Consumption', link: '/daily-calculations/e-vehicle-energy-consumption' },
         { text: 'Gas Vehicle Energy Consumption', link: '/daily-calculations/gas-vehicle-energy-consumption' },
+        { text: 'Canadian Buys Fuel Gas in USA', link: '/daily-calculations/buy-fuel-gas-in-usa' },       
         
       ]
     },
