@@ -61,15 +61,15 @@ Description: Calculate the beam sectional properties, enter the load, location o
 <!-- <helloVite> </helloVite> -->
 
 ## Shape Properties
-<CalcPicker :calcsData = "shapePropertyData" :iframeHeight="900"></CalcPicker>
+<CalcPicker :calcsData = "shapePropertyData" :iframeHeight="1400"></CalcPicker>
 
 Transfer relevant property data from above to the beam calculation below.
 ## Simple Beam Stress and Deflection Calculations
 <!-- <SimpleBeamAtLoad></SimpleBeamAtLoad> -->
-<CalcPicker :calcsData = "simpleBeamsAtLoad" :iframeHeight="800"></CalcPicker>
+<CalcPicker :calcsData = "simpleBeamsAtLoad" :iframeHeight="1200"></CalcPicker>
 
-### References
-    
+::: tip References
 1. Machinery's Handbook, Beam Calculations, 30th, P249  
 2. [Efunda.com Design Standards] (https://www.efunda.com/DesignStandards/design_home.cfm) 
 3. [How to Calculate Beam Data When Your Case Isn’t in a Table](https://mentoredengineer.com/beam-data-table/)
+:::

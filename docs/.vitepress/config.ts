@@ -89,6 +89,7 @@ function nav() {
           text: 'General',
           items: [
             { text: 'Daily Calculations', link: '/daily-calculations/' },
+            { text: 'Math', link: '/math/' },
             { text: 'Physics', link: '/physics/' },
             // { text: 'Chemistry', link: '/calculations/general/chemistry/' } // could not make this work with sidebar
           ]
@@ -155,7 +156,9 @@ function sidebarMath() {
       text: 'Math',
       collapsible: true,
       items: [
-        { text: 'Volume Box', link: '/math/volume-box' },
+        { text: 'Trigonometry', link: '/math/trigonometry' },
+        { text: 'Area Calculator', link: '/math/area-calculator' },
+        { text: 'Volume Calculator', link: '/math/volume-calculator' },
       ]
     },
     {
@@ -280,7 +283,7 @@ function sidebarElectrical() {
       text: 'Electrical General',
       collapsible: true,
       items: [
-        { text: 'Electrical Power', link: '/electrical/electrical-power' },
+        { text: 'Electrical Voltage-Current-Power', link: '/electrical/electrical-power' },
         { text: "Ohm's Law",        link: '/electrical/ohm-law' },
       ]
     },

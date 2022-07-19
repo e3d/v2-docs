@@ -12,5 +12,6 @@
   width="100%" :iframeHeight="750" style="border:1px solid black;">
 </CalcEmbeder>
 
-## Notes
+::: tip Notes
 - Noticed that many unit fields are shown in yellow, that indicate unit conversion is not automated for those units, because some units are not from the built-in library. This is an example that user can use custom units in calculations without unit conversion automation, thus user needs to perform conversion themselves.
+:::
