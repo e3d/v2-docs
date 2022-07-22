@@ -225,8 +225,10 @@ function sidebarMechanical() {
       items: [
         { text: 'Torque To Power', link: '/mechanical/torque-to-power' },
         { text: 'Power To Torque', link: '/mechanical/power-to-torque' },
+        { text: 'Mechanical Drive Torque Output', link: '/mechanical/mechanical-drive-torque-output' },
         { text: 'Belt/Chain Length', link: '/mechanical/belt-chain-length' },
-        { text: 'Bel Conveyor Speed', link: '/mechanical/belt-conveyor-speed' },
+        { text: 'Bel Conveyor Speed (Supply)', link: '/mechanical/belt-conveyor-speed-supply' },
+        { text: 'Bel Conveyor Speed (Demand)', link: '/mechanical/belt-conveyor-speed-demand' },
         
         { text: 'Shaft Sizing - Torsional, Round', link: '/mechanical/shaft-sizing-torsional-round' },
         { text: 'Shaft Sizing - Torsional, Round(v1)', link: '/mechanical/shaft-sizing-torsional-round-v1' },
