@@ -23,8 +23,8 @@ features:
 - title: SHARE
   details: Each saved calculation will have a unitque URL allowing it to be shared.
 - title: Explicit Expressions
-  details: User can create intuitive explicit experssions like "Area = PI() * r^2 /2", "S = v * t", etc.
-- title: 330+ Units in 40+ Categories
+  details: User can create intuitive explicit experssions like "Area = PI() * r^2", "S = v * t", thus focus on the essence of math, physics, etc.
+- title: About 400 Units in 50+ Categories
   details: Most common used units and quantity categories available at your finger tip. Custom units can be used with no unit conversion automation.
 
 footer: MIT Licensed | Copyright © 2022-Powered by AutoCalcs@v2.donwen.com

@@ -207,8 +207,16 @@ function sidebarDailyCalcs() {
       text: 'Driving',
       collapsible: true,
       items: [
-        { text: 'E-vehicle Energy Consumption', link: '/daily-calculations/e-vehicle-energy-consumption' },
-        { text: 'Gas Vehicle Energy Consumption', link: '/daily-calculations/gas-vehicle-energy-consumption' },
+        { text: 'Vehicle Energy Consumption', link: '/daily-calculations/vehicle-energy-consumption' },
+        { text: 'Fuel Consumption & Economy', link: '/daily-calculations/fuel-consumption-and-economy' },
+        { text: 'New-tech Vehicle Energy Consumption & Economy', link: '/daily-calculations/new-tech-vehicle-energy-consumption-and-economy' },
+        { text: 'Energy Consumption & Economy, Fuel vs New-tech', link: '/daily-calculations/energy-consumption-and-economy-fuel-vs-new-tech' },
+        
+        /* 
+          { text: 'E-vehicle Energy Consumption', link: '/daily-calculations/e-vehicle-energy-consumption' },
+          { text: 'Gas Vehicle Energy Consumption', link: '/daily-calculations/gas-vehicle-energy-consumption' }, 
+        */
+        
         { text: 'Canadian Buys Fuel Gas in USA', link: '/daily-calculations/buy-fuel-gas-in-usa' },       
         
       ]

@@ -3,7 +3,7 @@
 
   const calcData = {
     title: 'Belt Conveyor Speed (Supply)', 
-    calcUrl: 'c-20211018.222608961-e3d-0aa465-520bdf' 
+    calcUrl: 'c-' 
   }
 </script>
 # Belt Conveyor Speed (Demand)
