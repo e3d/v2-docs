@@ -8,6 +8,17 @@ export default defineConfig({
     siteTitle: 'AutoCalcs',
     search: true,
     searchMaxSuggestions: 10,
+    algolia: { // https://chenzhenhu.com/vitepress/algolia.html#%E9%85%8D%E7%BD%AE
+      appId: process.env.APP_ID,
+      apiKey: process.env.APP_KEY,
+      indexName: 'v2_docs',      
+    },
+
+    /* carbonAds: {
+      carbon: 'your-carbon-key',
+      custom: 'your-carbon-custom',
+      placement: 'your-carbon-placement'
+    }, */
     
     nav: nav(),
 
