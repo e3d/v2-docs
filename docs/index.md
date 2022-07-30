@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: AutoCalcs
-  text: Unit Conversion Unified Calculations (UCUC)
+  name: UCUC @AutoCalcs
+  text: Unit Conversion Unified Calculations
   tagline: false
   actions:
     - theme: brand

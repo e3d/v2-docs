@@ -68,6 +68,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/e3d/v2-docs' },
       { icon: 'twitter', link: 'https://twitter.com/engineered3D' },
       { icon: 'linkedin', link: 'https://www.linkedin.com/in/donwen/' },
+      { icon: 'youtube', link: 'https://www.youtube.com/channel/UCZcbGR_MNt6s5lY0W3_3-Ug' },
     ], // socialLinks
 
     footer: {
@@ -198,6 +199,7 @@ function sidebarDailyCalcs() {
       text: 'Fun Calculations',
       collapsible: true,
       items: [
+        { text: 'Unit Conversion - Generic', link: '/daily-calculations/unit-converter' },
         { text: 'Unit Conversion with Expression Input', link: '/daily-calculations/unit-conversion-w-expr-input' },
         { text: 'Mass Adder', link: '/daily-calculations/mass-adder' },
         { text: 'Length Adder', link: '/daily-calculations/length-adder' },
@@ -241,6 +243,7 @@ function sidebarMechanical() {
         { text: 'Shaft Sizing - Torsional, Round', link: '/mechanical/shaft-sizing-torsional-round' },
         { text: 'Shaft Sizing - Torsional, Round(v1)', link: '/mechanical/shaft-sizing-torsional-round-v1' },
         { text: 'Valley Angle', link: '/mechanical/valley-angle' },
+        { text: 'Model Railroad Scales Sizes', link: '/mechanical/model-railroad-scales-sizes' },
       ]
     },
     {
@@ -250,7 +253,14 @@ function sidebarMechanical() {
         { text: 'Hydraulics Basic', link: '/mechanical/hydraulics-basic' },
         { text: 'Viscosity Unit Conversion', link: '/mechanical/viscosity-unit-conversion' },
       ]
-    },    
+    },
+    {
+      text: 'Vacuum',
+      collapsible: true,
+      items: [
+        { text: 'Vacuum Suction Cup Sizing', link: '/mechanical/vacuum-suction-cup-sizing' },
+      ]
+    },  
     {
       text: 'More to Come...',
       collapsible: true,

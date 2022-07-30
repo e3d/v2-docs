@@ -16,7 +16,7 @@
   const calcSelected = ref(calcsData.value[0]);
 
   const filteredCalcsData = computed(() => calcsData.value.filter(
-    calc => calc.title.toLowerCase().includes(searchTerm.value.toLowerCase())
+    calc => calc.title.toLowerCase().includes(searchTerm.value.toLowerCase()) && (searchTerm.value != '')
   ));
 
   const changeCalc = calc => { 
@@ -31,10 +31,16 @@
   <!-- Filtered: {{ filteredCalcsData.length }} <br /> -->
   <div style="text-align: center; font-size: large;"> <b><u>{{ calcSelected.title }}</u></b> </div>
     
-  <div style="display: inline-block;">
-    <input class="searchInput" v-model="searchTerm" id="search" autocomplete="off"
+  <div class="searchInput" style="display: flex;">
+    <input v-model="searchTerm" id="search" autocomplete="off"
       placeholder="Search Calc Name ..." 
-      @click="showCalcList = true"/>    
+      @click="showCalcList = true"/>
+    <button class="btn-catlist">
+      <img src="/assets/icons/search-24px.svg"
+        alt="show category list"
+        title="Show all categories."
+        class="w-4 h-4"/>
+    </button> 
   </div> 
 
   <div id="searchedContent" class="calc-list" v-if="showCalcList === true" >
@@ -75,6 +81,7 @@
   position: absolute;
   z-index: 20;
   padding: 3px;
+  /* height: 400px; */
   /* width: 350px; */
   /* cursor: pointer; */
   border: 1px solid blueviolet;
@@ -82,8 +89,9 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  background-color: yellow;
+  background-color: lightgray;
   color: blue;  
+  overflow: auto;
 }
 
 .calc-at-mouse {
@@ -96,8 +104,8 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  background-color: green;
-  color: white;  
+  background-color: rgb(133, 218, 219);
+  color: black;  
 }
 
 .calc-at-mouse:hover {
@@ -111,7 +119,7 @@
   align-items: center;
   text-align: left;
   background-color: cyan;
-  color: white;  
+  color: blue;  
 }
 .searchInput {
   /* display: inline-block; */
@@ -128,5 +136,16 @@
   /* box-shadow: 2px 2px; */
   width: 200px;
   background-color: lavender;
+}
+
+.btn-catlist {
+  font-size: medium;
+  cursor: pointer;
+  /* height: 2em; */
+  padding: 1px 2px;
+  margin: 2px;
+  color: black;
+  background-color: #8adcde;
+  border-radius: 12px;
 }
 </style>
