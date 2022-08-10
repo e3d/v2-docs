@@ -4,12 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.4"
+    "vitepress": "^1.0.0-alpha.4",
+    "vitepress-plugin-search": "^0.0.3"
   },
   "scripts": {
     "d": "vitepress dev docs",
     "b": "vitepress build docs",
     "s": "vitepress serve docs",
+    "bs": "npm run index && vitepress build docs && npm run index && vitepress build docs",
+    "pb": "npm run index",
+    "index": "node ./node_modules/vitepress-plugin-search/src/index.js",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"

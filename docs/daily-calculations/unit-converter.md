@@ -25,8 +25,6 @@
     { id: 19, title: 'Solid Angle', calcUrl: 'c-20220728.045304527-e3d-0b4458-5989ef' },
     { id: 20, title: 'Density', calcUrl: 'c-20220728.045310661-e3d-0cc425-5a2a84' },
 
-    // pause
-    
     { id: 21, title: 'Energy', calcUrl: 'c-20220728.045319253-e3d-0634fe-5ed8f0' },
     { id: 22, title: 'Power', calcUrl: 'c-20220728.045323402-e3d-00d498-5ea8b6' },
     { id: 23, title: 'Torque / Moment of Force', calcUrl: 'c-20220728.045328371-e3d-0b1442-564a87' },
@@ -65,6 +63,8 @@
     
     { id: 51, title: 'New Energy Economy (MPGe)', calcUrl: 'c-20220728.050044907-e3d-0f3425-5b093b' },
     { id: 52, title: 'New Energy Consumption', calcUrl: 'c-20220728.050050081-e3d-07d4b1-5f9a67' },
+    { id: 53, title: 'Baud Rate', calcUrl: 'c-20220808.224913474-e3d-0e549b-5e5b30' },
+    
     
   ];
 

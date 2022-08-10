@@ -16,7 +16,8 @@
   const calcSelected = ref(calcsData.value[0]);
 
   const filteredCalcsData = computed(() => calcsData.value.filter(
-    calc => calc.title.toLowerCase().includes(searchTerm.value.toLowerCase()) && (searchTerm.value != '')
+    // calc => calc.title.toLowerCase().includes(searchTerm.value.toLowerCase()) && (searchTerm.value != '')
+    calc => calc.title.toLowerCase().includes(searchTerm.value.toLowerCase()) 
   ));
 
   const changeCalc = calc => { 
@@ -45,10 +46,10 @@
 
   <div id="searchedContent" class="calc-list" v-if="showCalcList === true" >
     <div class="calc-at-mouse"
-      v-for="calc in filteredCalcsData" :key="calc.id" 
+      v-for="(calc, idx) in filteredCalcsData" :key="idx" 
       @click="changeCalc(calc); showCalcList = false"
       @blur="showCalcList = false">
-      {{ calc.title }}
+      {{ idx }}-{{ calc.title }}
     </div>
   </div>
   
@@ -99,6 +100,7 @@
   padding: 3px;
   /* width: 350px; */
   cursor: pointer;
+  border-radius: 6px;
   border: 1px solid blueviolet;
   margin: 2px;
   justify-content: center;

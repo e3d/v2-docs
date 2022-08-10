@@ -9,9 +9,9 @@ export default defineConfig({
     search: true,
     searchMaxSuggestions: 10,
     algolia: { // https://chenzhenhu.com/vitepress/algolia.html#%E9%85%8D%E7%BD%AE
-      appId: process.env.APP_ID,
-      apiKey: process.env.APP_KEY,
-      indexName: 'v2_docs',      
+      // appId: process.env.APP_ID,
+      // apiKey: process.env.APP_KEY,
+      // indexName: 'v2_docs',      
     },
 
     /* carbonAds: {
@@ -168,6 +168,7 @@ function sidebarMath() {
       text: 'Math',
       collapsible: true,
       items: [
+        // { text: 'Math Q & A Template', link: '/math/qa-template' },
         { text: 'Trigonometry', link: '/math/trigonometry' },
         { text: 'Area Calculator', link: '/math/area-calculator' },
         { text: 'Volume Calculator', link: '/math/volume-calculator' },
