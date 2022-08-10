@@ -35,7 +35,8 @@
   <div class="searchInput" style="display: flex;">
     <input v-model="searchTerm" id="search" autocomplete="off"
       placeholder="Search Calc Name ..." 
-      @click="showCalcList = true"/>
+      @click="showCalcList = true"
+      @keyup.esc="showCalcList = false" />
     <button class="btn-catlist">
       <img src="/assets/icons/search-24px.svg"
         alt="show category list"
@@ -44,11 +45,12 @@
     </button> 
   </div> 
 
-  <div id="searchedContent" class="calc-list" v-if="showCalcList === true" >
+  <div id="searchedContent" class="calc-list" 
+    v-if="showCalcList === true" 
+    @mouseleave="showCalcList = false" >  <!-- !!! turn off the list when mouse leaves. mouseout doesnot work on this case. -->
     <div class="calc-at-mouse"
       v-for="(calc, idx) in filteredCalcsData" :key="idx" 
-      @click="changeCalc(calc); showCalcList = false"
-      @blur="showCalcList = false">
+      @click="changeCalc(calc); showCalcList = false" >
       {{ idx }}-{{ calc.title }}
     </div>
   </div>
