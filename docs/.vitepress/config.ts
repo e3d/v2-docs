@@ -195,6 +195,8 @@ function sidebarPhysics() {
         { text: 'Mass - Sphere', link: '/physics/mass-sphere' },
         { text: 'Half Life Decay', link: '/physics/half-life-decay' },
         { text: 'Pendulum Calculation', link: '/physics/pendulum-calculation' },
+        { text: 'Linear Thermal Expansion', link: '/physics/linear-thermal-expansion' },
+        
       ]
     },
     {
@@ -263,6 +265,7 @@ function sidebarMechanical() {
       collapsible: true,
       items: [
         { text: 'Hydraulics Basic', link: '/mechanical/hydraulics-basic' },
+        { text: 'Hydraulics Gear Motor', link: '/mechanical/hydraulics-gear-motor' },
         { text: 'Viscosity Unit Conversion', link: '/mechanical/viscosity-unit-conversion' },
       ]
     },

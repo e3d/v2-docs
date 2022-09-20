@@ -84,7 +84,7 @@
   position: absolute;
   z-index: 20;
   padding: 3px;
-  /* height: 400px; */
+  height: 380px;
   /* width: 350px; */
   /* cursor: pointer; */
   border: 1px solid blueviolet;

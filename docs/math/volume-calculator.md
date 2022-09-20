@@ -26,4 +26,5 @@
 
 ::: tip References
 - [https://www.calculator.net/volume-calculator.html](https://www.calculator.net/volume-calculator.html)
+- [https://www.geeksforgeeks.org/frustum-of-a-cone/](https://www.geeksforgeeks.org/frustum-of-a-cone/)
 :::
