@@ -6,19 +6,19 @@
 As indicated by the name AutoCalcs, it includes two parts:
 - **Auto**: calculations created in AutoCalcs are live, responsive and can be reused. Each calculation is essentially an app, allowing new inputs to be entered and get updated results.
   
-  **Auto** also means unit conversion can be automated when all units used in a calculator are chosen from the AutoCalcs library, as indicated by the 'Unit[Auto]' button on the header; when non-standard unit is used, unit conversion is disabled, while calculation can still be performed, except that the user needs to take care of unit conversion in this case. This allows users to use custom units as needed. An example can be found at [E-vehicle Energy Consumption](/daily-calculations/e-vehicle-energy-consumption.html).
+  **Auto** features **UCUC** (Unit Conversion Unified Calculations), meaning unit conversion can be automated when all units used in a calculator are chosen from the AutoCalcs library, as indicated by the 'Unit[Auto]' button on the header in each calculation; when non-standard unit is used, unit conversion is disabled, while calculation can still be performed, except that the user needs to take care of unit conversion in this case. This allows users to use custom units as needed. An example can be found at [E-vehicle Energy Consumption](/daily-calculations/e-vehicle-energy-consumption.html).
 
 - **Calcs**: the plural form as opposed to single means AutoCalcs can be used to perform multi-step calculations, it is a platform and it's a calculation library.
 
 ## It is a Calculator
 As a calculator, AutoCalcs can be used in 2 modes:
-### - Single Mode: 
+### Single Mode: 
 This is what is shown when you enter https://v2.donwen.com. It is a simple clean calculator with an input and an output field. For angles, the default unit is degrees, however you are free to switch between degrees(DEG) and radians(RAD). Also most of the common math functions and constants (e, 𝞹, etc.) are available and list can be found in the help page.  
 <iframe src="https://v2.donwen.com/embed-calculator"
   width="100%" height="600" style="border:1px solid black;">
 </iframe>
 
-### - Multi-step Mode:
+### Multi-step Mode:
 You can easily add a 2nd quantity (row) by clicking the 'Add A Quantity/Expression' button from the toolbar or shortcut 'Alt+Q'. AutoCalcs will automatically swtich to multi-step mode, allowing you to perform more complicated calculations. If you ever perform calculations in Excel or Google Sheets, AutoCalcs allows you to perform many common calculations, while you can write expressions in an explicit manner, using symbols directly.  Eg.: `a = 30, z = sin(a)`. 
 
 Below is a cylinder volume calculator that you can use right on this page. Please note:
@@ -28,7 +28,7 @@ Below is a cylinder volume calculator that you can use right on this page. Pleas
     width="100%" :iframeHeight="1200" style="border:1px solid black;">
   </CalcEmbeder>
 
-### - Images can be Added Easily
+### Images can be Added Easily
 Images can be added for each calculation easily in multiple ways; can be removed, or position adjusted easily - just "Drag & Drop".  
 
 When a calculation is created from an existing one, all images will be copied over.

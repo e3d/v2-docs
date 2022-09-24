@@ -3,7 +3,7 @@
 If you would like us to
 - show some calculations on this site
 - include some units, or unit categories
-- any other suggestions  
+- any other suggestions / questions
   
 Feel free to reach us.
 
