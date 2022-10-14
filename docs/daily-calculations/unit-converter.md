@@ -64,6 +64,7 @@
     { id: 51, title: 'New Energy Economy (MPGe)', calcUrl: 'c-20220728.050044907-e3d-0f3425-5b093b' },
     { id: 52, title: 'New Energy Consumption', calcUrl: 'c-20220728.050050081-e3d-07d4b1-5f9a67' },
     { id: 53, title: 'Baud Rate', calcUrl: 'c-20220808.224913474-e3d-0e549b-5e5b30' },
+    { id: 54, title: 'Impulse / Momentum', calcUrl: 'c-20220929.051001046-e3d-0064a9-5a2ac8' },
     
     
   ];
