@@ -141,7 +141,7 @@ function nav() {
         },
       ],
     },
-    { text: "FAQs", link: "/guide/", activeMatch: "/guide/faqs" },   /* TODO: */
+    { text: "FAQs", link: "/guide/faqs", activeMatch: "/guide/faqs" },   /* TODO: */
     { text: "Contact", link: "/contact/" },
   ];
 }
@@ -252,12 +252,12 @@ function sidebarDailyCalcs() {
       collapsible: true,
       items: [
         {
-          text: "Unit Conversion - Generic",
+          text: "Unit Converter - Generic",
           link: "/daily-calculations/unit-converter",
         },
         {
-          text: "Unit Conversion with Expression Input",
-          link: "/daily-calculations/unit-conversion-w-expr-input",
+          text: "Unit Converter with Expression Input",
+          link: "/daily-calculations/unit-converter-w-expr-input",
         },
         { text: "Mass Adder", link: "/daily-calculations/mass-adder" },
         { text: "Length Adder", link: "/daily-calculations/length-adder" },
@@ -363,11 +363,24 @@ function sidebarMechanical() {
         {
           text: "Hydraulics Gear Motor",
           link: "/mechanical/hydraulics-gear-motor",
+        },        
+        {
+          text: "Basic Cylinder Calculations Demo-01",
+          link: "/mechanical/basic-cylinder-calculations-demo-01",
+        },
+        {
+          text: "Fluid Power Calculations Demo-01",
+          link: "/mechanical/fluid-power-calculations-demo-01",
+        },
+        {
+          text: "Basic Hydraulic Motor/Pump Calculations Demo-01",
+          link: "/mechanical/basic-hydraulic-motor-pump-calculations-demo-01",
         },
         {
           text: "Viscosity Unit Conversion",
           link: "/mechanical/viscosity-unit-conversion",
-        },
+        },        
+
       ],
     },
     {
