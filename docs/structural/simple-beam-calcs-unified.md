@@ -70,6 +70,6 @@ Transfer relevant property data from above to the beam calculation below.
 
 ::: tip References
 1. Machinery's Handbook, Beam Calculations, 30th, P249  
-2. [Efunda.com Design Standards] (https://www.efunda.com/DesignStandards/design_home.cfm) 
+2. [Efunda.com Design Standards](https://www.efunda.com/DesignStandards/design_home.cfm) 
 3. [How to Calculate Beam Data When Your Case Isn’t in a Table](https://mentoredengineer.com/beam-data-table/)
 :::

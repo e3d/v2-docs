@@ -37,5 +37,5 @@
 </CalcEmbeder>
 
 ::: tip References
-1. [Hydraulic Gear Motors] (https://www.jbj.co.uk/gear-motors.html#example-calculation)
+1. [Hydraulic Gear Motors](https://www.jbj.co.uk/gear-motors.html#example-calculation)
 :::
