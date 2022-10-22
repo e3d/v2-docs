@@ -32,7 +32,7 @@
 ## Flow Rate
 
 <CalcEmbeder :calcData="calcData1"
-  width="100%" :iframeHeight="350" style="border:1px solid black;">
+  width="100%" :iframeHeight="450" style="border:1px solid black;">
 </CalcEmbeder>
 
 ## Delievered Torque
@@ -44,7 +44,7 @@
 ## Delivered Power
 
 <CalcEmbeder :calcData="calcData3"
-  width="100%" :iframeHeight="500" style="border:1px solid black;">
+  width="100%" :iframeHeight="800" style="border:1px solid black;">
 </CalcEmbeder>
 
 ::: tip References

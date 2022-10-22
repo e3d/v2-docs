@@ -360,6 +360,7 @@ function sidebarMechanical() {
       collapsible: true,
       items: [
         { text: "Hydraulics Basic", link: "/mechanical/hydraulics-basic" },
+        { text: "Pipe Sizing for Flow Capacity", link: "/mechanical/pipe-sizing-for-flow-capacity" },        
         {
           text: "Hydraulics Gear Motor",
           link: "/mechanical/hydraulics-gear-motor",

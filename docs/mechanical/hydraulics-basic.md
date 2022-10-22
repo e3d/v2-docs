@@ -9,19 +9,20 @@
   const calcData1 = {
     title: 'Hydraulics General Calculation', 
     calcUrl: 'c-20220521.180628598-e3d-083448-570959' 
-  }
+  }  
 
-  const calcData2 = {
+  const calcData3 = {
     title: 'Hydraulic Gear Motor Calculation', 
     calcUrl: 'c-20220910.185914492-e3d-0ab4b4-561a94' 
   }
+
 </script>
 
 # Basic Hydraulics Calculations
 ## Hydraulic Pump Input Power Calculation
 
 <CalcEmbeder :calcData="calcData0"
-  width="100%" :iframeHeight="800" style="border:1px solid black;">
+  width="100%" :iframeHeight="900" style="border:1px solid black;">
 </CalcEmbeder>
 
 ## Hydraulics General Calculation
@@ -32,7 +33,7 @@
 
 ## Hydraulic Gear Motor Calculation
 
-<CalcEmbeder :calcData="calcData2"
+<CalcEmbeder :calcData="calcData3"
   width="100%" :iframeHeight="800" style="border:1px solid black;">
 </CalcEmbeder>
 
