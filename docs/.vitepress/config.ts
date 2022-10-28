@@ -197,6 +197,7 @@ function sidebarMath() {
         { text: "Trigonometry", link: "/math/trigonometry" },
         { text: "Area Calculator", link: "/math/area-calculator" },
         { text: "Volume Calculator", link: "/math/volume-calculator" },
+        { text: "Box Diagonal Line Length Calculator", link: "/math/box-diagonal-line-length" },        
       ],
     },
     {
@@ -492,6 +493,10 @@ function sidebarPipeFitterWelder() {
           text: "Pipe Bends - Simple",
           link: "/pipe-fitter-welder/pipe-bends-simple",
         },
+        {
+          text: "Pipe Bends Welding Layout",
+          link: "/pipe-fitter-welder/pipe-bends-welding-layout",
+        },        
       ],
     },
     {
