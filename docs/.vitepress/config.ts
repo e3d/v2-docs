@@ -30,6 +30,7 @@ export default defineConfig({
       "/examples/": sidebarExamples(),
       "/engineering-common/": sidebarEngineeringCommon(),      
       "/mechanical/": sidebarMechanical(),
+      "/mechanics-of-materials/": sidebarMechanicsOfMaterials(),
       "/structural/": sidebarStructural(),
       "/electrical/": sidebarElectrical(),
       "/daily-calculations/": sidebarDailyCalcs(),
@@ -119,6 +120,7 @@ function nav() {
           text: "Engineering",
           items: [
             { text: "Common", link: "/engineering-common/" },
+            { text: "Mechanics of Materials", link: "/mechanics-of-materials/" },
             {
               text: "Mechanical",
               link: "/mechanical/",
@@ -313,6 +315,26 @@ function sidebarEngineeringCommon() {
           text: "Scaler - Unit Conversion Automated",
           link: "/engineering-common/scaler-ucuc",
         },
+      ],
+    },
+    
+  ];
+}
+
+function sidebarMechanicsOfMaterials() {
+  return [
+    {
+      text: "Mechanics of Materials",
+      collapsible: true,
+      items: [
+        {
+          text: "Stresses",
+          link: "/mechanics-of-materials/stresses",
+        },
+        /* {
+          text: "Scaler - Unit Conversion Automated",
+          link: "/engineering-common/scaler-ucuc",
+        }, */
       ],
     },
     

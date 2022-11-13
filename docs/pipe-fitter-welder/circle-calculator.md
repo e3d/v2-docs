@@ -12,7 +12,7 @@
 
 ## Calculate Circle Values
 <CalcEmbeder :calcData="calc0Data"
-  width="100%" :iframeHeight="1200" style="border:1px solid black;">
+  width="100%" :iframeHeight="1250" style="border:1px solid black;">
 </CalcEmbeder>
 
 ::: tip References
