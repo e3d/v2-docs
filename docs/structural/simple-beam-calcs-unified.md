@@ -6,6 +6,10 @@
     { id: 0, title: 'Round Tube', calcUrl: 'c-20210906.173706515-e3d-0a34fa-5e9ba3' },
     { id: 1, title: 'Square', calcUrl: 'c-20210915.222913664-e3d-0c74d9-5de9c1' },
     { id: 2, title: 'Rectangle', calcUrl: 'c-20210906.173706522-e3d-0ec46e-5adb6f' },
+    { id: 3, title: 'Angle (Case A)', calcUrl: 'c-20221117.214457202-e3d-068400-5f294a' },
+    { id: 4, title: 'Angle (Case B)', calcUrl: 'c-20221117.220737447-e3d-047457-5c1b7b' },
+    { id: 5, title: 'Angle (Case C)', calcUrl: 'c-20221117.221856247-e3d-03c49d-50e969' },
+
   ];
 
   const simpleBeamsAtLoad = [ // ref1: Machinery's Hdbk 31, ref2: BeamFormulas

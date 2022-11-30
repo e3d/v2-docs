@@ -35,6 +35,7 @@ export default defineConfig({
       "/electrical/": sidebarElectrical(),
       "/daily-calculations/": sidebarDailyCalcs(),
       "/pipe-fitter-welder/": sidebarPipeFitterWelder(),
+      "/data-sense/": sidebarDataSense(),
     },
 
     /* 
@@ -143,7 +144,26 @@ function nav() {
         },
       ],
     },
+
+    {
+      text: "Data Sense",
+      items: [
+        { text: "Frequent Used Data", link: "/data-sense/lengths-make-sense" },
+
+        /*{           
+          text: "General", // Title for the section.
+          items: [
+            { text: "Daily Calculations", link: "/daily-calculations/" },
+            { text: "Math", link: "/math/" },
+            { text: "Physics", link: "/physics/" },
+          ],
+        },     */    
+        
+      ],
+    },
+    
     { text: "FAQs", link: "/guide/faqs", activeMatch: "/guide/faqs" },   /* TODO: */
+    
     { text: "Contact", link: "/contact/" },
   ];
 }
@@ -519,6 +539,25 @@ function sidebarPipeFitterWelder() {
           text: "Pipe Bends Welding Layout",
           link: "/pipe-fitter-welder/pipe-bends-welding-layout",
         },        
+      ],
+    },
+    {
+      text: "More to Come...",
+      collapsible: true,
+      items: [],
+    },
+  ];
+}
+
+function sidebarDataSense() {
+  return [
+    {
+      text: "Data Sense",
+      collapsible: true,
+      items: [
+        { text: "Lengths - Make Sense", link: "/data-sense/lengths-make-sense" },
+        { text: "Speeds/Velocities - Make Sense", link: "/data-sense/speeds-make-sense" },
+        
       ],
     },
     {
