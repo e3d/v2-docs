@@ -24,9 +24,9 @@
 
 </script>
 
-## Stresses
+## Simple Stresses
 
-<CalcPicker :calcsData = "stressesCalcsData" :iframeHeight="400"></CalcPicker>
+<CalcPicker :calcsData = "stressesCalcsData" :iframeHeight="750"></CalcPicker>
 
 ## Factor of Safety
 <CalcPicker :calcsData = "factorsOfSafetyData" :iframeHeight="400"></CalcPicker>

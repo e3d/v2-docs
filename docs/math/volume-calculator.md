@@ -13,8 +13,11 @@
     { id: 7, title: 'Spherical Cap', calcUrl: 'c-20220807.070414714-e3d-0bb4e3-5689e2' },
     { id: 8, title: 'Ellipsoid', calcUrl: 'c-20220808.061211557-e3d-0bf446-5c68f6' },
     { id: 9, title: 'Conical Frustum', calcUrl: 'c-20220808.061957137-e3d-00b411-535b01' },
-    { id: 10, title: 'Square Pyramid', calcUrl: 'c-20220808.062350922-e3d-0a146b-5eab54' },
-    { id: 11, title: 'Pipe / Tube', calcUrl: 'c-20220808.062654219-e3d-00e4d4-559b68' },
+    { id: 10, title: 'Frustum of Regular Pyramid', calcUrl: 'c-20230213.194958700-e3d-02847c-514b17' },
+    { id: 11, title: 'Frustum of Regular Pyramid - Generic', calcUrl: 'c-20230215.060911904-e3d-0ad4a9-523afb' },
+    { id: 12, title: 'Square Pyramid', calcUrl: 'c-20220808.062350922-e3d-0a146b-5eab54' },
+    { id: 13, title: 'Pipe / Tube', calcUrl: 'c-20220808.062654219-e3d-00e4d4-559b68' },
+    
     
   ];
 

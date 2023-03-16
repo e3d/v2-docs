@@ -86,7 +86,7 @@ export default defineConfig({
       { icon: "linkedin", link: "https://www.linkedin.com/in/donwen/" },
       {
         icon: "youtube",
-        link: "https://www.youtube.com/channel/UCZcbGR_MNt6s5lY0W3_3-Ug",
+        link: "https://www.youtube.com/@autocalcs",
       },
     ], // socialLinks
 
@@ -284,6 +284,7 @@ function sidebarDailyCalcs() {
         },
         { text: "Mass Adder", link: "/daily-calculations/mass-adder" },
         { text: "Length Adder", link: "/daily-calculations/length-adder" },
+        { text: "BMI/PI (Body Mass Index / Ponderal Index)", link: "/daily-calculations/bmi-pi" },
       ],
     },
     {
@@ -348,9 +349,27 @@ function sidebarMechanicsOfMaterials() {
       collapsible: true,
       items: [
         {
-          text: "Stresses",
-          link: "/mechanics-of-materials/stresses",
+          text: "Simple Stresses",
+          link: "/mechanics-of-materials/simple-stresses",
         },
+        {
+          text: "Hooke's Law",
+          link: "/mechanics-of-materials/hookes-law",
+        },
+        {
+          text: "Linear Thermal Expansion",
+          link: "/physics/linear-thermal-expansion",
+        },
+        {
+          text: "Elastic Deformation of Axial Loaded Member",
+          link: "/mechanics-of-materials/elastic-deformation-of-axial-loaded-member",
+        },
+        {
+          text: "Shear Stress in Shaft",
+          link: "/mechanics-of-materials/shear-stress-in-shaft",
+        },       
+
+        
         /* {
           text: "Scaler - Unit Conversion Automated",
           link: "/engineering-common/scaler-ucuc",
