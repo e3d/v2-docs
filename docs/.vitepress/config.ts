@@ -457,6 +457,16 @@ function sidebarMechanical() {
       ],
     },
     {
+      text: "Materials Handling",
+      collapsible: true,
+      items: [
+        {
+          text: "Belt Conveyor Speed - Demand vs Supply",
+          link: "/mechanical/materials-handling/conveyor-belt-speed-demand-vs-supply",
+        },
+      ],
+    },
+    {
       text: "More to Come...",
       collapsible: true,
       items: [],
