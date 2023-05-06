@@ -4,8 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.4",
-    "vitepress-plugin-search": "^0.0.3"
+    "vitepress": "^1.0.0-alpha.75"
   },
   "scripts": {
     "d": "vitepress dev docs",
