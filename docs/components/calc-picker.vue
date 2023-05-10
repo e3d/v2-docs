@@ -1,5 +1,5 @@
 <script setup>
-  import { ref, toRefs, computed, defineProps } from 'vue';
+  import { ref, toRefs, computed } from 'vue';
   const props = defineProps({
     calcsData: Array, // list of similar calcs, like shape-property-calcs, etc
     iframeHeight: Number

@@ -320,6 +320,11 @@ csstype@^2.6.8:
   resolved "https://registry.npmjs.org/csstype/-/csstype-2.6.21.tgz"
   integrity sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==
 
+dotenv@^16.0.3:
+  version "16.0.3"
+  resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.0.3.tgz"
+  integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
+
 esbuild@^0.17.5:
   version "0.17.18"
   resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.17.18.tgz"

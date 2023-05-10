@@ -6,16 +6,24 @@ export default defineConfig({
   themeConfig: {
     logo: "/assets/e3d-logo.png",
     siteTitle: "AutoCalcs",
-    search: {
+    /* search: {
       provider: 'local'
-    },
-    // searchMaxSuggestions: 10,
-    /* algolia: {
-      https://chenzhenhu.com/vitepress/algolia.html#%E9%85%8D%E7%BD%AE
-      appId: process.env.APP_ID,
-      apiKey: process.env.APP_KEY,
-      indexName: 'v2_docs',
     }, */
+    search: {
+      provider: 'algolia', 
+      options: {
+        //https://chenzhenhu.com/vitepress/algolia.html#%E9%85%8D%E7%BD%AE
+        // appId: 'ACK5BPREB1',
+        // apiKey: '8709b8f287ab66b37a2f699f52ca0021',
+        
+        appId: process.env.APP_ID,
+        apiKey: process.env.API_KEY,
+        indexName: 'v2-donwen',
+
+      }
+    },
+
+    // searchMaxSuggestions: 10,    
 
     /* carbonAds: {
       carbon: 'your-carbon-key',
